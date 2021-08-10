@@ -1,6 +1,6 @@
 {
   "vendor": "codebluepartnerbr",
-  "name": "tema-codeblue",
+  "name": "tema-codeblue-aplicah",
   "version": "0.0.2",
   "builders": {
     "styles": "2.x",
