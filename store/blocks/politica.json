@@ -1,0 +1,8 @@
+{
+  "store.custom#politica": {
+    "blocks": [
+      "flex-layout.row#about-us",
+      "video#about-us"
+    ]
+  }
+}
