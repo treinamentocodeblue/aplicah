@@ -6,11 +6,14 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      "rich-text#shelf-title-1",
+      "flex-layout.row#shelf-1",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "rich-text#shelf-title-2",
+      "flex-layout.row#shelf-2",
+      "flex-layout.row#banner-home-1",
+      "rich-text#shelf-title-3",
+      "flex-layout.row#shelf-3",
       "newsletter"
     ]
   },
@@ -18,15 +21,15 @@
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 400,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "/arquivos/banner.jpg",
+          "mobileImage": "/arquivos/banner.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "/arquivos/banner.jpg",
+          "mobileImage": "/arquivos/banner.jpg"
         }
       ]
     }
@@ -44,13 +47,13 @@
     }
   },
 
-  "rich-text#shelf-title": {
+  "rich-text#shelf-title-1": {
     "props": {
-      "text": "## Summer",
+      "text": "## Promoções",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
+  "flex-layout.row#shelf-1": {
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
@@ -82,22 +85,52 @@
       "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
+      "blockClass": "info-card-exemplo",
       "textAlignment": "center"
     }
   },
-
-  "rich-text#question": {
+  "rich-text#shelf-title-2": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
     }
   },
-
-  "rich-text#link": {
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "flex-layout.row#banner-home-1":{
+    "children":[
+      "flex-layout.col#banner-home-1",
+      "flex-layout.col#banner-home-2"
+    ]
+  },
+  "flex-layout.col#banner-home-1":{
+    "children":[
+      "image#banner-home-1"
+    ]
+  },
+  "image#banner-home-1": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "src": "/arquivos/banner.jpg"
     }
+  },
+  "flex-layout.col#banner-home-2":{
+    "children":[
+      "image#banner-home-2"
+    ]
+  },
+  "image#banner-home-2": {
+    "props": {
+      "src": "/arquivos/banner.jpg"
+    }
+  },
+  "rich-text#shelf-title-3": {
+    "props": {
+      "text": "## *Nova* **coleção**",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-3": {
+    "children": ["list-context.product-list#demo1"]
   }
 }

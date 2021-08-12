@@ -6,12 +6,17 @@
 
 .container--shelfTitle {
   color: #727273;
-  justify-content: center;
-  text-align: center;
+  border-bottom:1px solid #727273;
 }
 
 .headingLevel2--shelfTitle {
   font-weight: 200;
+}
+
+.italic--shelfTitle{
+  font-size:10px;
+  color:#900;
+  display:block;
 }
 
 .container--deals .paragraph {
